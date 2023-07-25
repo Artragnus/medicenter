@@ -1,0 +1,583 @@
+* {
+    font-family: Arial;
+}
+body {
+    margin:0px;
+    padding:0px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container {
+    width: 990px;
+    display: flex;   
+    justify-content: space-between;
+}
+
+.logo-medicenter {
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    padding: 15px;
+    text-decoration: none;   
+    text-transform: uppercase;
+    color: #727272;
+    font-family: Arial;
+}
+
+nav #active,
+nav a:hover {
+    background-color: #39aae1;
+    color: white;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image:url(../images/img1.jpg);
+    background-position: center;
+    background-size:cover;
+    height: 670px;
+    
+}
+
+#banner .container {
+    flex-direction: column;
+}
+
+.frases {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
+
+#banner .frases h1 {
+
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 1px 0 #555;
+    margin:0;
+    margin-top: 30px;
+    
+    
+}
+
+#banner .frases h2 {
+    font-size: 19px;
+    color: white;
+}    
+
+.banner-textos {
+    display: flex;
+    height: 210px;
+}
+
+.banner1,
+.banner2,
+.banner3 {
+    flex:1;
+    color: white;
+    padding: 20px;
+}
+
+.banner1 {
+    background-color:#39aae1;
+}
+
+.banner2{
+    background-color: #0079c7;
+}
+
+.banner3 {
+    background-color: #2b4c99;
+}
+
+.banner-title{
+    font-size: 21px;
+}
+
+.banner-text {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.banner-options a {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.banner-op {
+    border-bottom: 1px solid #2b6499;
+    
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px
+    
+}
+
+.banner-text .banner-op {
+    margin-bottom: 0px;
+}
+
+#geral  {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#geral section {
+    flex: 2;
+}
+
+#geral aside {
+    flex:1;
+}
+
+.widget-title {
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.widget-text {
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.widget-bar {
+    width: 50px;
+    height: 2px;
+    background: #36a9e1;
+    margin-top: 10px;
+}
+
+.widget-body1 {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.quadrado {
+    background-color:#39aae1;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.logo {
+    width: 35px;
+    height: 35px;
+    background-color: #EEE;
+}
+
+.phone {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px; 
+    border-bottom: solid 1px #EEE;
+    border-top: solid 1px #EEE;
+    padding: 10px;
+}
+
+.phone-number,
+.email-contact,
+.form-text {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.email,
+.form {
+    display: flex;
+    border-bottom: solid 1px #EEE;
+    padding: 10px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+article .news-data {
+    display: flex;
+}
+
+article .news-posted-at {
+    background-color: #2b4c99;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+}
+
+article .news-comments {
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    background-color: #39aae1;
+    margin-left: 2px;
+}
+
+article .news-thumbnail img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    
+}
+
+article .news-title {
+    font-size: 30px;
+    color: black;
+    margin-bottom: 25px;
+}
+
+article .news-article {
+font-size: 17px;
+color: #c5c5c5;
+margin-bottom: 25px;
+line-height: 24spx;
+}
+
+article a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu{
+    display: flex;
+    flex: 1;
+}
+
+.fm-1,
+.fm-2,
+.fm-3 {
+    flex: 1;
+
+}
+
+.footer-menu a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.fm-title {
+    font-size: 21px;
+}
+
+.fm-subtitle {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.fm-1 {
+    background-color:#39aae1;
+}
+
+.fm-2 {
+    background-color:#0079c7 ;
+}
+
+.fm-3 {
+    background-color:#2b4c99 ;
+}
+
+.flexcolumn {
+    flex-direction: column;
+}
+
+.footer-area {
+    
+    display: flex;
+    flex: 1;
+    
+    
+}
+
+.footer-areaitem {
+    flex: 1;
+}
+
+footer .widget-title {
+    color: white;
+}
+
+.footer-copy {
+    color: #5c5c5c;
+    height: 40px;
+    line-height: 40px;
+    border-top: solid 1px #2c2c2c;
+    margin-top:30px;
+    font-size: 12px;
+}
+
+.fai-text {
+    color: #5c5c5c;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.fai-contact {
+    color: #5c5c5c;
+    font-size: 14px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;   
+    margin-right: 25px;
+    margin-bottom: 25px;
+}
+
+.fai-contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact-square {
+    background-color: #2c2c2c;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.contact-logo {
+    display: flex;
+    
+}
+
+.post-content a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+
+}
+
+.posted-at a {
+    font-size: 12px;
+    color:#0079c7 ;
+    text-decoration: none;
+}
+
+.post-content {
+    margin-bottom: 3px;
+}
+
+.posted-at {
+    margin-bottom: 10px;
+}
+
+.twitter-post a {
+    color: #5c5c5c;
+    text-decoration: none;
+    font-size: 14px;
+    
+}
+
+#atwitter {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.twitter-post {
+    margin-bottom: 3px;
+}
+
+.twitter-posted-at a {
+    text-decoration: none;
+    font-size: 12px;
+    color:#0079c7;
+}
+
+.twitter-posted-at {
+    margin-bottom: 10px;
+}
+
+.menu-list-buttom {
+    width: 40px;
+    height: 40px;
+    display: none;
+}
+
+.menu-list-line {
+    background-color: #39aae1;
+    height: 6px;
+    width: auto;
+}
+
+
+@media (max-width:990px) {
+
+.footer-copy {
+    padding-left: 20px;
+}
+
+.logo-medicenter,
+.frases {
+    padding-left:20px;
+}
+
+.widget-title,
+.widget-body {
+    padding: 20px;
+}
+
+footer .widget-body .fai-contact {
+    margin-right: 0px;
+}
+
+
+}
+
+@media (max-width:960px) {
+    
+    
+
+    header .logo-medicenter {
+       padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        position: absolute;
+        display: none;
+        left: 0;
+        background-color: white;
+        width: 100%;
+        margin-top: 20px;
+        
+    }
+    
+    header {
+        height: auto;
+    }
+
+    header .menu-list-buttom {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-right: 15px;
+        
+    }
+
+    .footer-area {
+        flex-direction: column;
+    }
+
+
+        
+}
+
+    @media (max-width:668px) {
+        #banner .frases h1 {
+            font-size: 40px;
+        }
+
+        #banner .frases h2 {
+            font-size: 16px;
+            
+        }
+
+        .banner-textos {
+            flex-direction: column;
+            height: auto;
+            margin-top: 150px;
+            
+        }
+        
+        #geral .container {
+            flex-direction: column;
+        }
+
+        #banner { 
+            height: auto;
+            
+            
+        }
+
+        .widget-body1 {
+            padding-left: 20px;
+        }
+    }
+
+    @media (max-width:600px) {
+        .footer-menu {
+            flex-direction: column;
+        }
+
+        aside .widget-body {
+            margin-bottom: 20px;
+        }
+
+    }
+
+@media (max-width:320px) {
+    #geral .widget-title {
+        margin-left: 20px;
+    }
+
+    #geral .widget-body,
+    #geral .widget-body1 {
+        margin-left: 20px;
+    }
+}
+
+
+
+
+
+
+
+   
+
+    
+
+
+
+        
+
